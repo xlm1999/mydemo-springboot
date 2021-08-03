@@ -1,0 +1,2 @@
+#org.springframework.boot.autoconfigure.EnableAutoConfiguration=com.meng.GpCoreService
+com.meng.MyConfiguration.ConditionalOnClass=com.meng.GpCoreService

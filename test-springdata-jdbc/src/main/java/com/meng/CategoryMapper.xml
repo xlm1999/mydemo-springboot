@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.meng.CategoryMapper">
+
+    <select id="getCategories" resultType="com.meng.Category">
+       select categoryid,categoryName from category;
+    </select>
+
+    <select id="getCategotyById" resultType="com.meng.Category" parameterType="int">
+       select categoryid,categoryName from category where categoryid = #{id};
+    </select>
+
+</mapper>
